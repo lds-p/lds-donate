@@ -1,0 +1,251 @@
+
+header.pf-header(role='banner')
+	.pf-header__top
+		.pf-logo
+			a.ldschurch-logotype(href='//stage.lds.org/?lang=eng')
+				h1.ldschurch-logotype__text The Church of Jesus Christ of Latter-day Saints
+		nav.pf-nav(role='navigation')
+			.pf-top.pf-small
+				ul
+					li.pf-language
+						a.pf-prefix.pf-icon-globe.pf-popup__trigger(href='#pf-language', aria-haspopup='true', aria-owns='pf-language')
+							span.pf-language__country2 Worldwide
+							span.pf-language__separator  - 
+							span.pf-language__language English
+						#pf-language.pf-popup.pf-language__popup.pf-popup-closed
+							a.pf-language__country(href='#d')
+							.pf-language__select
+								a.pf-prefix.pf-icon-location(href='//stage.lds.org/countries?lang=eng') Select Country
+								a.pf-prefix.pf-icon-language(href='//stage.lds.org/languages?lang=eng') English
+
+					li#pf-auth.pf-personal
+						a.pf-prefix.pf-icon-signin.pf-popup__trigger(href='#pf-personal-links', aria-haspopup='true', aria-owns='pf-personal-links')
+							span.pf-personal__text My Account and Ward
+							span#pf-signin.pf-personal__name2
+						#pf-personal-links.pf-popup.pf-personal__popup.pf-popup-closed
+							.pf-personal__top 
+								span.pf-personal__name.pf-prefix.pf-icon-signin
+								a.pf-sign-in(href='https://stage.lds.org/signinout/?signmein') Sign In
+								a.pf-sign-out(href='http://stage.lds.org/signinout/?signmeout') Sign Out
+							.pf-personal__bottom.pf-popup__cols
+								.pf-popup__col
+									h4.pf-popup__submenu__heading My Account
+									ul
+										li
+											a(href='https://ldsaccount.lds.org', data-omniture='') Account Settings
+										li
+											a(href='http://familysearch.org/tree', data-omniture='') My Family Tree
+										li
+											a(href='//stage.lds.org/study-tools/folders?lang=eng', data-omniture='') Notes
+										li
+											a(href='https://apps.lds.org/pbrequest/landing', data-omniture='') Patriarchal Blessing
+								.pf-popup__col
+									h4.pf-popup__submenu__heading My Ward
+									ul
+										li
+											a(href='//stage.lds.org/directory/?lang=eng', data-omniture='') Directory
+										li
+											a(href='//stage.lds.org/church-calendar/?lang=eng', data-omniture='') Calendar
+										li
+											a(href='//stage.lds.org/lesson?lang=eng', data-omniture='') Lesson Schedules
+										li
+											a(href='//stage.lds.org/member-news?lang=eng', data-omniture='') Newsletter
+								.pf-popup__col
+									h4.pf-popup__submenu__heading Tools and Support
+									ul
+										li
+											a(href='//stage.lds.org/tools?lang=eng', data-omniture='') All Tools
+										li
+											a(href='//stage.lds.org/maps/?lang=eng', data-omniture='') Maps and Meetinghouse Locator
+										li
+											a(href='//stage.lds.org/mls/mbr/?lang=eng', data-omniture='') Leader and Clerk Resources
+										li
+											a(href='//stage.lds.org/pages/mobileapps?lang=eng', data-omniture='') Mobile Applications
+										li
+											a(href='//stage.lds.org/locations/camping?lang=eng', data-omniture='') Recreation Camps
+										li
+											a(href='//stage.lds.org/help/support?lang=eng', data-omniture='') Help Center
+										li
+											a(href='http://store.lds.org/', data-omniture='') Online Store
+	nav.pf-header__bottom.pf-small
+		.pf-joshua
+			h2
+				a.pf-joshua__heading.pf-icon-menu.pf-popup__trigger(href='#pf-joshua', aria-haspopup='true', aria-owns='pf-joshua') Site Menu
+			ul#pf-joshua.pf-joshua__menus.pf-popup-closed
+				li.pf-joshua__menu.pf-1
+					h3.pf-joshua__menu__heading
+						a.pf-popup__trigger(href='#pf-1', aria-haspopup='true', aria-owns='pf-1') Scriptures and Study
+					#pf-1.pf-popup.pf-popup__cols.pf-popup-closed
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Prophetic Teachings
+							ul
+								li
+									a(href='//stage.lds.org/scriptures?lang=eng', data-omniture='') Scriptures
+								li
+									a(href='//stage.lds.org/general-conference?lang=eng', data-omniture='') General Conference
+								li
+									a(href='//stage.lds.org/topics/scriptures-and-study/living-prophets-church-leaders?lang=eng', data-omniture='') Living Prophets and Church Leaders
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Learn More
+							ul
+								li
+									a(href='https://jesuschrist.lds.org', data-omniture='') Jesus Christ
+								li
+									a(href='//stage.lds.org/topics?lang=eng', data-omniture='') Gospel Topics
+								li
+									a(href='https://history.lds.org/', data-omniture='') Church History
+								li
+									a(href='//stage.lds.org/topics/education?lang=eng', data-omniture='') Education
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Helpful Resources
+							ul
+								li
+									a(href='//stage.lds.org/topics/serve-and-teach/lessons-and-teaching?lang=eng', data-omniture='') Lessons and Teaching
+								li
+									a(href='//stage.lds.org/magazine?lang=eng', data-omniture='') Magazines
+								li
+									a(href='//stage.lds.org/music?lang=eng', data-omniture='') Music
+								li
+									a(href='//stage.lds.org/topics/scriptures-and-study/helpful-resources/achievement-programs?lang=eng', data-omniture='') Achievement Programs
+								li
+									a(href='//stage.lds.org/topics/scriptures-and-study/study-tools?lang=eng', data-omniture='') Study Tools
+				li.pf-joshua__menu.pf-2
+					h3.pf-joshua__menu__heading
+						a.pf-popup__trigger(href='#pf-2', aria-haspopup='true', aria-owns='pf-2') Families and Individuals
+					#pf-2.pf-popup.pf-popup__cols.pf-popup-closed
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Eternal Families
+							ul
+								li
+									a(href='//stage.lds.org/topics/family-proclamation?lang=eng', data-omniture='') Doctrine of the Family
+								li
+									a(href='//stage.lds.org/topics/family?lang=eng', data-omniture='') Home and Family
+								li
+									a(href='//stage.lds.org/church/temples?lang=eng', data-omniture='') Temples
+								li
+									a(href='//stage.lds.org/topics/family-history?lang=eng', data-omniture='') Family History
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Life&apos;s Challenges
+							ul
+								li
+									a(href='//stage.lds.org/topics/families-and-individuals/lifes-challenges/hope-and-help?lang=eng', data-omniture='') Hope and Help
+								li
+									a(href='//stage.lds.org/topics/pef-self-reliance?lang=eng', data-omniture='') Self-Reliance
+								li
+									a(href='//stage.lds.org/topics/welfare?lang=eng', data-omniture='') Employment and Welfare
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Resources For
+							ul
+								li
+									a(href='//stage.lds.org/topics/families-and-individuals/singles-young-adults?lang=eng', data-omniture='') Young Adults
+								li
+									a(href='//stage.lds.org/youth?lang=eng', data-omniture='') Youth
+								li
+									a(href='//stage.lds.org/children?lang=eng', data-omniture='') Children
+				li.pf-joshua__menu.pf-3
+					h3.pf-joshua__menu__heading
+						a.pf-popup__trigger(href='#pf-3', aria-haspopup='true', aria-owns='pf-3') Share the Gospel
+					#pf-3.pf-popup.pf-popup__cols.pf-popup-closed
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Participate
+							ul
+								li
+									a(href='//stage.lds.org/church/share?lang=eng', data-omniture='') How to Share the Gospel
+								li
+									a(href='https://mormon.org', data-omniture='') Mormon.org
+								li
+									a(href='http://www.mormon.org/missionaries', data-omniture='') Referrals for Missionaries
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Full-Time Missions
+							ul
+								li
+									a(href='//stage.lds.org/callings/missionary?lang=eng', data-omniture='') Prepare for a Mission
+								li
+									a(href='https://apps.lds.org/recentry/login.lds', data-omniture='') Missionary Recommendation Form
+								li
+									a(href='https://missionary.lds.org', data-omniture='') Full-time Missionary Portal
+				li.pf-joshua__menu.pf-4
+					h3.pf-joshua__menu__heading
+						a.pf-popup__trigger(href='#pf-4', aria-haspopup='true', aria-owns='pf-4') Inspiration and News
+					#pf-4.pf-popup.pf-popup__cols.pf-popup-closed
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Be Inspired
+							ul
+								li
+									a(href='//stage.lds.org/topics/inspiration-and-news/inspiring-media?lang=eng', data-omniture='') Inspiring Media
+								li
+									a(href='//stage.lds.org/music?lang=eng', data-omniture='') Music
+								li
+									a(href='//stage.lds.org/general-conference?lang=eng', data-omniture='') General Conference
+								li
+									a(href='//stage.lds.org/magazine?lang=eng', data-omniture='') Magazines
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Stay Informed
+							ul
+								li
+									a(href='//stage.lds.org/church/news?lang=eng', data-omniture='') Church News
+								li
+									a(href='http://www.mormonnewsroom.org/newsroom-country-sites', data-omniture='') Mormon Newsroom
+								li
+									a(href='//stage.lds.org/church/events?lang=eng', data-omniture='') Upcoming Events
+								li
+									a(href='//stage.lds.org/media-library/social?lang=eng', data-omniture='') Social Media
+								li
+									a(href='//stage.lds.org/countries?lang=eng', data-omniture='') Country Pages
+				li.pf-joshua__menu.pf-5
+					h3.pf-joshua__menu__heading
+						a.pf-popup__trigger(href='#pf-5', aria-haspopup='true', aria-owns='pf-5') Serve and Teach
+					#pf-5.pf-popup.pf-popup__cols.pf-popup-closed
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Lead and Teach
+							ul
+								li
+									a(href='//stage.lds.org/topics/serve-and-teach/lead-in-the-church?lang=eng', data-omniture='') Lead in the Church
+								li
+									a(href='//stage.lds.org/topics/serve-and-teach/lessons-and-teaching?lang=eng', data-omniture='') Lessons and Teaching
+								li
+									a(href='//stage.lds.org/media-library?lang=eng', data-omniture='') Media Library
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Callings
+							ul
+								li
+									a(href='//stage.lds.org/callings/melchizedek-priesthood?lang=eng', data-omniture='') Melchizedek Priesthood
+								li
+									a(href='//stage.lds.org/callings/relief-society?lang=eng', data-omniture='') Relief Society
+								li
+									a(href='//stage.lds.org/callings/aaronic-priesthood?lang=eng', data-omniture='') Aaronic Priesthood
+								li
+									a(href='//stage.lds.org/callings/young-women?lang=eng', data-omniture='') Young Women
+								li
+									a(href='//stage.lds.org/callings/primary?lang=eng', data-omniture='') Primary
+								li
+									a(href='//stage.lds.org/callings/sunday-school?lang=eng', data-omniture='') Sunday School
+								li
+									a(href='//stage.lds.org/callings/missionary?lang=eng', data-omniture='') Missionary
+								li
+									a(href='http://seminary.lds.org/', data-omniture='') Seminaries
+								li
+									a(href='http://institute.lds.org/', data-omniture='') Institutes
+								li
+									a(href='//stage.lds.org/callings?lang=eng', data-omniture='') All Callings
+						.pf-popup__col
+							h4.pf-popup__submenu__heading Service Opportunities
+							ul
+								li
+									a(href='//stage.lds.org/topics/serve-and-teach/volunteer-time-and-talent?lang=eng', data-omniture='') Volunteer Time and Talent
+								li
+									a(href='//stage.lds.org/topics/serve-and-teach/how-church-is-helping?lang=eng', data-omniture='') How the Church is Helping
+			// /
+		form.pf-search(action='https://stage.lds.org/search', method='get', accept-charset='utf-8', role='search', data-key='ldsorg')
+			input(type='hidden', name='lang', value='eng')
+			fieldset
+				label.pf-search__label.pf-icon-search(for='pf-global-search')
+					span Search
+				#pf-search-inputs.pf-search__inputs
+					a.pf-search__hider(href='#d')
+						span Hide Search
+					input#pf-global-search.pf-search__field(type='text', autocomplete='off', placeholder='Search Church sites', name='query')
+					input.pf-search__button(type='submit', value='', aria-label='Search')
+					ul#list57.pf-search__resultList
+
+
