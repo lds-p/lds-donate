@@ -1,0 +1,293 @@
+extend _church-layout
+
+block content
+	#platform-canvas
+
+		style(type='text/css').
+			#slide1 {background-image: url('img/tithing-hero.jpg');}
+		style(type='text/css').
+			#slide1-1 {top: 85px;left: 555px;width: 225px;font-size: 36px;color: #ffffff !important;}
+			#slide1-1 a {color: #ffffff; text-decoration: inherit; }
+			#slide1-1 h1 a {color: #ffffff; text-decoration: inherit; font-size: 36px;}
+
+
+		//-----------------------------
+		//- Left side navigation
+		//-----------------------------
+
+		#platform-canvas-nav
+			h2
+				a(href='/topics/service?lang=eng') Donate Money and Items
+			hr
+			ul
+				li
+					.leftNavSubList(style='cursor: pointer;') Local Unit Donations
+					ul(style='display: none;')
+						ul
+							li
+								a(href='#') Online Donations System
+								a(href='http://www.mormonnewsroom.org/article/tithing') About Tithing and Charitable Donations
+								a(href='https://www.lds.org/topics/tithing') Tithing
+								a(href='https://www.lds.org/topics/fasting-and-fast-offerings') Fasting and Fast Offerings
+								a(href='https://www.lds.org/topics/missionary-work') Missionary Work
+								a(href='https://www.lds.org/topics/humanitarian-service') Humanitarian Service
+				li
+					.leftNavSubList(style='cursor: pointer;') LDS Philanthropies
+					ul(style='display: none;')
+						ul
+							li
+								a(href='http://www.ldsphilanthropies.org/ldsp/about.html') About LDS Philanthropies
+								a(href='http://www.ldsphilanthropies.org/perpetual-education-fund.html') Self-Reliance / Perpetual Education Fund
+								a(href='http://www.ldsphilanthropies.org/family-search.html') Family History
+								a(href='http://www.ldsphilanthropies.org/byu.html') Brigham Young University
+								a(href='http://www.ldsphilanthropies.org/byu-hawaii.html') BYU–Hawaii
+								a(href='http://www.ldsphilanthropies.org/byu-idaho.html') BYU–Idaho
+								a(href='http://www.ldsphilanthropies.org/lds-business-college.html') LDS Business College
+								a(href='http://www.ldsphilanthropies.org/current-giving-opportunities.html') Temple and Other Priorities
+				li
+					.leftNavSubList(style='cursor: pointer;') Ways to Donate
+					ul(style='display: none;')
+						ul
+							li
+								a(href='#') Online Local Unit Donations
+								a(href='https://www.ldsphilanthropies.org/donations/lds-church/ldsp.html?cde1=795') Online LDS Philanthropies Donations
+								a(href='http://www.ldsphilanthropies.org/gift-planning/how-to-give/family-directed-giving-tools/donor-advised-fund-daf.html') Online Donor Advised Fund
+								a(href='http://www.ldsphilanthropies.org/gift-planning/what-to-give.html') Wills, Financial Plans, and Assets
+								a(href='http://deseretindustries.org/') Household Goods and Clothing
+				//-
+					li
+						.leftNavSubList(style='cursor: pointer;') Donate Assets
+						ul(style='display: none;')
+							ul
+								li
+									a(href='#') Stocks and Bonds
+									a(href='#') Real Estate
+									a(href='#') Household Goods and Clothing 
+									a(href='#') Art and Historical Artifacts
+									a(href='#') Intellectual Property
+									a(href='#') Business Interests
+					li
+						.leftNavSubList(style='cursor: pointer;') Wills and Financial Plans
+						ul(style='display: none;')
+							ul
+								li
+									a(href='#') Wills and Trusts
+									a(href='#') Retirement Plan Accounts
+									a(href='#') Life Insurance
+									a(href='#') Charitable Trusts and Annuities
+					li
+						.leftNavSubList(style='cursor: pointer;') Family Philanthropy
+						ul(style='display: none;')
+							ul
+								li
+									a(href='#') Teaching Children to Care for Others
+									a(href='#') Involving Your Family in Philanthropy
+									a(href='#') Self-Reliance
+									a(href='#') Family Donor Advised Fund
+									a(href='#') Caring for the Poor and Needy
+
+
+		//-----------------------------
+		//- Content
+		//-----------------------------
+
+		#platform-canvas-content.lang-eng(role='main')
+
+
+
+			//-----------------------------
+			//- Feature image
+			//-----------------------------
+
+			#feature
+				ul#carousel
+					li#slide1
+						//- .text
+						//- 	#slide1-1.text
+						//- 		h1(style='font-size: 38px;') Have I Done Any Good?
+						//- 		p &ldquo;Spiritual strength frequently comes through selfless service.&rdquo;
+						//- 		p(style="font-family: Georgia, Times, 'Times New Roman', serif !important; font-size: 16px; text-decoration: none !important; color: rgb(255, 252, 192) !important; text-align: right;")
+						//- 			span(style='font-size:12px;')
+						//- 				em &mdash;President Monson, April 2010
+						//- 		p &nbsp;
+						//- 		p(style='text-align: right;') &nbsp;
+			// end #feature
+
+
+
+
+
+
+
+			//-----------------------------
+			//- Teasers
+			//-----------------------------	
+
+			style.
+				#teasers.no-carousel > div,
+				#teasers.no-carousel > div > ul,
+				#teasers.no-carousel > div > ul > li.last,
+				#teasers.no-carousel > div > ul > li:last-child {
+					padding-right: 0;
+				}
+				#teasers.no-carousel > div > ul,
+				#teasers.no-carousel > div > ul > li.first,
+				#teasers.no-carousel > div > ul > li:first-child {
+					padding-left: 0;
+				}
+				#teasers.no-carousel > div > ul > li {
+					width: 222px;
+				}
+				.callout {
+					border-bottom: 1px solid #d3d3d3;
+				}
+				.callout p {
+					font-weight: bold;
+					font-size: 1.25em;
+				}
+
+
+			#teasers.no-carousel
+				div
+					ul
+						li.first
+							a(href='#')
+								h2 Local Unit Donations
+							a(href='#')
+								img.img-decor(src='img/tithing_thumb.jpg', alt='A member paying tithing to his bishop')
+							p Tithing and other charitable donations may be given to local priesthood leaders or through the Church’s online donation system.
+							ul.list-decor
+								li: a(href='https://www.lds.org/donations/'): strong Online Donations System
+								li: a(href='http://www.mormonnewsroom.org/article/tithing') About Tithing and Charitable Donations
+								li: a(href='https://www.lds.org/topics/tithing') Tithing
+								li: a(href='https://www.lds.org/topics/fasting-and-fast-offerings') Fasting and Fast Offerings
+								li: a(href='https://www.lds.org/topics/missionary-work') Missionary Work
+								li: a(href='https://www.lds.org/topics/humanitarian-service') Humanitarian Service
+						li
+							a(href='#')
+								h2 LDS Philanthropies
+							a(href='#')
+								img.img-decor(src='img/missionary_thumb.jpg', alt='Two young missionaries walking')
+							p LDS Philanthropies is responsible for philanthropic donations to The Church of Jesus Christ of Latter-Day Saints and its affiliated charities.
+							ul.list-decor
+								li: a(href='http://www.ldsphilanthropies.org/ldsp/about.html') About LDS Philanthropies
+								li: a(href='http://www.ldsphilanthropies.org/perpetual-education-fund.html') Self-Reliance / Perpetual Education Fund
+								li: a(href='http://www.ldsphilanthropies.org/family-search.html') Family History
+								li: a(href='http://www.ldsphilanthropies.org/byu.html') Brigham Young University
+								li: a(href='http://www.ldsphilanthropies.org/byu-hawaii.html') BYU–Hawaii
+								li: a(href='http://www.ldsphilanthropies.org/byu-idaho.html') BYU–Idaho
+								li: a(href='http://www.ldsphilanthropies.org/lds-business-college.html') LDS Business College
+								li: a(href='http://www.ldsphilanthropies.org/current-giving-opportunities.html') Temple and Other Priorities
+						li.last
+							a(href='#')
+								h2 Ways to Donate
+							a(href='#')
+								img.img-decor(src='img/money_thumb.jpg', alt='Coins in a jar')
+							p Every donation given to the Church is considered sacred. All donations are voluntary offerings and are used with careful oversight and discretion.
+							ul.list-decor
+								li: a(href='https://www.lds.org/donations/') Online Local Unit Donations #[nobr (e-Check)]
+								li: a(href='https://www.ldsphilanthropies.org/donations/lds-church/ldsp.html?cde1=795') LDS Philanthropies Donations (Credit Card, e-Check, PayPal)
+								li: a(href='http://www.ldsphilanthropies.org/gift-planning/how-to-give/family-directed-giving-tools/donor-advised-fund-daf.html') Online Donor Advised Fund
+								li: a(href='http://www.ldsphilanthropies.org/gift-planning/what-to-give.html') Wills, Financial Plans, and Assets
+								li: a(href='http://deseretindustries.org/') Household Goods and Clothing
+
+			//-
+				#teasers.no-carousel
+					div
+						ul
+							li.first
+								a(href='#')
+									h2 Donate Assets
+								a(href='#')
+									img.img-decor(src='img/house_thumb.jpg', alt='Exterior of a home')
+								ul.list-decor
+									li: a(href='#') Stocks and Bonds
+									li: a(href='#') Real Estate
+									li: a(href='#') Household Goods and Clothing 
+									li: a(href='#') Art and Historical Artifacts
+									li: a(href='#') Intellectual Property
+									li: a(href='#') Business Interests
+							li
+								a(href='#')
+									h2 Wills and Financial Plans
+								a(href='#')
+									img.img-decor(src='img/financial_thumb.jpg', alt='Mature couple talking to a financial advisor')
+								ul.list-decor
+									li: a(href='#') Wills and Trusts
+									li: a(href='#') Retirement Plan Accounts
+									li: a(href='#') Life Insurance
+									li: a(href='#') Charitable Trusts and Annuities
+							li.last
+								a(href='#')
+									h2 Family Philanthropy
+								a(href='#')
+									img.img-decor(src='img/family_thumb.jpg', alt='A mature couple with their adult daughter smiling and looking at a large book together')
+								ul.list-decor
+									li: a(href='#') Teaching Children to Care for Others
+									li: a(href='#') Involving Your Family in Philanthropy
+									li: a(href='#') Self-Reliance
+									li: a(href='#') Family Donor Advised Fund
+									li: a(href='#') Caring for the Poor and Needy
+
+				#teasers.no-carousel
+					h2 Answers to Common Questions
+
+					div.callout
+						img.img-decor(src='img/farming_large.jpg', alt='A man and a boy digging in a field')
+						ul.list-decor
+							a(href="#") How Are My Donations Used?
+
+					div
+						ul.list-decor
+							li: a(href="#") What is tithing?
+							li: a(href="#") Can I pay tithing with a credit card?
+							li: a(href="#") What donations can be made with a credit card?
+							li: a(href="#") What is LDS Philanthropies?
+							li: a(href="#") Can I make gifts in memory of someone, or in lieu of flowers?
+							li: a(href="#") Can I leverage employer matching when I give?
+							li: a(href="#") How can I make my ward donations more private?
+							li: a(href="#") What is Treasury Services?
+							li: a(href="#") What is Deseret Trust Company?
+							li: a(href="#") What is The Church of Jesus Christ of Latter-day Saints Foundation?
+							li: a(href="#") How are my tithing dollars used?
+							li: a(href="#") How much of my donations go directly to the cause?
+							li: a(href="#") Why do Latter-day Saints fast and give the cost of the meals to the poor?
+							li: a(href="#") Can I get a tax receipt for my donations?
+							li: a(href="#") Why does the Church accept donations beyond tithes and offerings?
+							li: a(href="#") Why support Church schools?  Doesn’t tithing and tuition cover the costs?
+							li: a(href="#") How do my donations support the mission of the Church?
+							li: a(href="#") What is a Donor Advised Fund?
+							li: a(href="#") Where can I find beneficiary language for a will, insurance policy, or trust?
+							li: a(href="#") How do I donate stock, artwork, historical artifacts, or intellectual property?
+							li: a(href="#") How can I locate the nearest Deseret Industries?
+							li: a(href="#") Why is education so important to God’s work?
+							li: a(href="#") How can I teach my children to be generous?
+
+
+
+
+					//-----------------------------
+					//- Bottom Teaser
+					//-----------------------------	
+
+					// .bottom-teaser
+						.box-decor
+							#text
+								h2
+								|                                             
+								div(style='margin-left: -250px; text-align: center;')
+									h2
+										strong From Five Minutes to Full Time
+									h3 Find opportunities to serve based on your availability, talents, and interests.
+								p &nbsp;
+			// end #teasers
+			#beta-feedback
+				span &nbsp;
+				|             
+				a(href='https://www.lds.org/tools/feedback?lang=eng&note=Service | Jesus Christ is the Example for Service&id=11340')
+					| Do you have feedback?
+					img(src='//edge.ldscdn.org/ml/ldsorg/images/common/arrow-open-4x7-fff.png', alt='')
+		// end #platform-canvas-content
+	// end #platform-canvas
+
+

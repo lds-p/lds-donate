@@ -1,0 +1,42 @@
+html.no-js(lang="en")
+	head
+		- var localEnv = env === 'local'
+		- localEnv = true
+		- var cssVersion = 0.1
+		- var jsVersion = 0.1
+
+		- var assetBase = '';
+		- var extension = localEnv ? '.html' : '';
+
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		block title
+			title LDS Philanthropies: #{page.title}
+		block meta
+			meta(name='description', content='')
+			meta(name='keywords', content='')
+			meta(name='viewport', content='width=device-width, , initial-scale=1')
+
+		// Place favicon.ico and apple-touch-icon.png in the root directory
+		//- link(rel='shortcut icon', href=assetBase + 'favicon.ico?v=3')
+
+		// Styles
+		link(rel='stylesheet', href=assetBase + 'css/style.css?v=' + cssVersion)
+
+		// Essential scripts inline. Other scripts loaded via script loader.
+		include ../js/init.js.jade
+
+	body
+		header.main
+			h1 
+				a(href="/") LDS Philanthropies
+			nav
+				a.home(href="/") Home
+				a.opportunities(href="/giving" + extension) Giving Opportunities
+				a.planning(href="/gift-planning" + extension) Gift Planning
+				a.ways(href="/ways-to-give" + extension) Ways to Give
+
+		block content
+			
+
+		footer.main

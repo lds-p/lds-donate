@@ -1,0 +1,79 @@
+
+
+@import "base/normalize"
+@import "base/h5bp"
+
+@import "mfdc-sass-vars-colors"
+@import "mfdc-sass-vars-fonts"
+@import "mfdc-sass-vars"
+
+/* ==========================================================================
+   Basic Styles
+   ========================================================================== */
+
+@import "base/basics"
+
+/* ==========================================================================
+   Site-specific styles
+   ========================================================================== */
+
+
+body
+	font-family: $font__family--sans
+
+nav
+	background-color: $color__cobalt
+
+nav a
+	&, &:link
+		display: inline-block
+		padding: 0.5em 1em
+		background-color: transparent
+		transition: all 0.2s ease
+	&, &:link, &:visited
+		color: $color__cloud
+	&:hover, &:focus
+		text-decoration: none
+		background-color: $color__cobalt--dark
+		color: $color__white
+
+header.main
+	h1 
+		margin: 0 2em 0 0
+		a
+			height: 100px
+			display: block
+			background: url(../img/ldsp.png) top left no-repeat
+			background-size: 425px 100px
+			.svg &
+				background-image: url(../img/ldsp.svg)
+			@extend .ir
+
+a.donate
+	display: block
+	color: $color__white
+	text-shadow: 0 -1px 1px $color__cobalt--dark
+	background-color: mix($color__cobalt, $color__cobalt--light)
+	line-height: 1
+	border-radius: 0.3em
+	margin: 1em 1em 1.5em
+	padding: 0.75em
+	text-align: center
+	transition: all 200ms ease
+	font-weight: 600
+	font-size: 16px
+	.cssremunit &
+		font-size: 1rem
+	&:hover
+		text-decoration: none
+		background-color: mix($color__cobalt--dark, $color__cobalt)
+
+	.cssgradients & // Enhance for browsers that handle gradients
+		background: linear-gradient($color__cobalt--light, $color__cobalt, $color__cobalt--dark)
+		background-size: auto 6em
+		background-position: 0 0
+		&:hover
+			background-position: 0 -2.5em
+
+
+

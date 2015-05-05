@@ -1,0 +1,19 @@
+extends _layout
+
+block title
+	title General Missionary Fund
+
+block content
+	- var extension = localEnv ? '.html' : '';
+
+	article.main
+
+		h1 General Missionary Fund
+
+		.hero
+			.action
+				h2 Enable worthy young men and women to serve full-time missions regardless of their economic circumstances.
+				h2
+					a.donate(href="#") Donate Online
+
+				img(src="img/missionary.jpg", alt="Three missionaries walking along a dirt road")
