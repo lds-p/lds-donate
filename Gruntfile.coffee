@@ -18,7 +18,7 @@ module.exports = (grunt) ->
 				banner: '/*! <%= pkg.name %> - v<%= pkg.version %>  */'
 			script:
 				files:
-					'js/script.min.js' : [
+					'dist/js/script.min.js' : [
 						'js/libs/jquery-2.0.3.min.js',
 						'js/plugins/picturefill-2.1.0-beta.min.js',
 						# 'js/libs/snap-svg.min.js',
@@ -28,7 +28,7 @@ module.exports = (grunt) ->
 						'js/script.js']
 			touch:
 				files:
-					'js/script-touch.min.js' : [
+					'dist/js/script-touch.min.js' : [
 						'js/libs/jquery-2.0.3.min.js',
 						'js/plugins/picturefill-2.1.0-beta.min.js',
 						# 'js/libs/snap-svg.min.js',
@@ -40,7 +40,7 @@ module.exports = (grunt) ->
 						'js/script.js']
 			init:
 				files:
-					'js/init.min.js' : [
+					'dist/js/init.min.js' : [
 						'js/libs/modernizr.min.js',
 						'js/init.js']
 
@@ -69,7 +69,7 @@ module.exports = (grunt) ->
 				# trace:     true
 			dist:
 				files:
-					"css/style.css" : "sass/style.sass"
+					"dist/css/style.css" : "sass/style.sass"
 			# prod:
 			# 	options:
 			# 		sourcemap: false
@@ -81,11 +81,11 @@ module.exports = (grunt) ->
 			local:
 				options:
 					map: true
-				src: 'css/*.css'
+				src: 'dist/css/*.css'
 			prod:
 				options:
 					map: false
-				src: 'css/*.css'
+				src: 'dist/css/*.css'
 
 		"merge-json":
 			local:
@@ -113,7 +113,7 @@ module.exports = (grunt) ->
 				expand: true
 				cwd: "jade/"
 				src: "**/*.html.jade"
-				dest: ""
+				dest: "dist/"
 				ext: ".html"
 				extDot: "first"
 
@@ -156,11 +156,11 @@ module.exports = (grunt) ->
 				files: ['jade/**/*.jade', 'data/**/*.json']
 				tasks: ['jade']
 			image:
-				files: ['img/*']
+				files: ['dist/img/*']
 				options:
 					livereload: true
 			html:
-				files: ['*.html']
+				files: ['dist/*.html']
 				options:
 					livereload: true
 			# js:
@@ -174,7 +174,7 @@ module.exports = (grunt) ->
 			# 	options:
 			# 		livereload: true
 			css:
-				files: ['css/**/*']
+				files: ['dist/css/**/*']
 				options:
 					livereload: true
 			# yaml:
